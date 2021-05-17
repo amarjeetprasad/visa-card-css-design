@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:lightgray;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.card{
+  width:380px;
+  height:220px; background:url("https://images.all-free-download.com/images/graphiclarge/shiny_sky_with_stars_design_vector_background_522914.jpg");
+  background-position:100%,100%;
+  border-radius:20px;
+  padding:10px;
+  color:#fff;
+  position:relative;
+  box-shadow:0 18px 18px 7px gray;
+  transition:all 0.5s;
+}
+
+.card:hover{
+  transform:scale(1.02);
+}
+
+.card::after{
+  content:"";
+  width:378px;
+  height:222px;
+  background:#1e3980;
+  position:absolute;
+  clip-path: polygon(31% 13%, 51% 49%, 85% 65%, 100% 100%, 0 99%, 0% 60%, 0 0);
+  top:0;
+  left:0;
+  bottom:0;
+  border-radius:20px;
+  
+}
+
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:45px 28px;
+  z-index:1;
+}
+.top_left{
+  font-size:1.2rem;
+  z-index:1;
+}
+.top_right{
+  font-size:2rem;
+  font-weight:600;
+}
+.bottom{
+  position:absolute;
+  bottom:22px;
+  left:28px;
+  width:100%;
+  font-size:1.2rem;
+  letter-spacing:1.3px;
+  z-index:1;
+}
+.bottom .bottom_p span{
+  display:block;
+  padding:0 0 10px 0 ;
+  color:lightgray;
+  letter-spacing:1px;
+}
